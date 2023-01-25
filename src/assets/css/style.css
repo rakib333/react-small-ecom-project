@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, ol {
+    list-style-type: none;
+}
+body{
+    background-color: rgb(241, 245, 248);
+    font-family: monospace;
+}
+.content-body {
+    width: 100%;
+}
+.container {
+    max-width: 1060px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+/* header part style  */
+.navbar-bg {
+    background-color: #1C2B35;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    padding-right: 20px;
+    
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 18px;
+    transition: all 1s ease;
+    
+}
+.navbar ul li:hover > a{
+    color: green;
+    
+}
+.navbar ul li:last-child{
+    padding-right: 0;
+}
+
+/* shop page style  */
+.shop-main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+
+}
+.product-container{
+    text-align: left;
+    border: 1px dashed rgb(206, 154, 154);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: -1px 4px 13px -1px rgba(0,0,0,0.37);
+    position: relative;
+}
+.product-container img{
+    height: 280px;
+    width: 280px;
+    border-radius: 15px;
+}
+.product-container p{
+    margin-bottom: 40px;
+}
+
+.btn-cart button{
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(240, 237, 85);
+    position: absolute;
+    bottom: 0;
+    color: rgb(52, 10, 238);
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px 0;
+    margin: 0 5px;
+    transition: all .7s ease-in-out;
+}
+.btn-cart button:hover{
+    background-color: rgb(122, 235, 137);
+}
+
+.order-container {
+    position: fixed;
+    right: 0;
+    height: 100vh;
+    padding: 20px;
+    background-color: aqua;
+}
+.icon-size{
+    height: 20px;
+    width: 20px;
+    color: rgb(236, 9, 9);
+}
