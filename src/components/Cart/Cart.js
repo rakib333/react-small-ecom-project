@@ -12,6 +12,7 @@ const Cart = ({ cart }) => {
 
   // let tax = (price * .1).toFixed(2);
   let tax = Math.round(price * 0.1);
+  const grandTotal = price + shipping + tax;
   return (
     <div>
       <div className="order-details">
@@ -21,7 +22,7 @@ const Cart = ({ cart }) => {
           <h3>Total price:${price} </h3>
           <h3>Total Shipping:${shipping}</h3>
           <h3>Tax: ${tax}</h3>
-          <h2>Grand Total: </h2>
+          <h2>Grand Total: ${grandTotal} </h2>
         </div>
         <div>
           <button>Delete Order</button>
